@@ -1,0 +1,9 @@
+*!
+
+__pycache__
+.venv
+.ruff_cache
+.pytest_cache
+automation_testing.egg-info
+
+TODO.md

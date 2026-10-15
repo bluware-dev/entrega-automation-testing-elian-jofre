@@ -1,0 +1,29 @@
+[project]
+name = "automation-testing"
+version = "0.1.0"
+description = "Proyecto de Automation Testing"
+requires-python = ">=3.13" # Repositorio desarrollado con Python 3.14 (Recomendable).
+
+dependencies = [
+	"pytest",
+	"pytest-html",
+	"selenium",
+	"ruff",
+]
+
+[dependency-groups]
+dev = [
+	"ruff",
+]
+
+[tool.ruff]
+target-version = "py314" # Adaptar a la version de python que se este utilizando.
+line-length = 88
+indent-width = 4
+
+[tool.ruff.lint]
+select = ["E", "F", "I"]
+
+[tool.ruff.format]
+quote-style = "single"
+indent-style = "tab"
